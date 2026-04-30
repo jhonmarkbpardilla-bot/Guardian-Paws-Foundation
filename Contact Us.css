@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');@import url('https://fonts.googleapis.com/css2?family "Nunito"ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito" sans-serif;
+    background: #FAF5EF;
+    color: #1b4332;
+}
+
+
+.nav-wrapper {
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.nav-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+}
+
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-bar img {
+    width: 48px;
+    height: 48px;
+}
+
+.logo-text-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.org-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #065F46;
+}
+
+.tagline {
+    font-family:  "Nunito", sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #C17134;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-family:  "Nunito", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #065F46;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid #065F46;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid #065F46;
+}
+
+.container {
+    max-width: 1100px; 
+    margin: auto;
+    padding: 40px 20px 80px;
+}
+
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tag {
+    font-family: "Nunito", sans-serif;
+    background: #d1fae5;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin: 15px 0 10px;
+    color: #064e3b;
+    font-family: "Playfair Display", sans-serif;
+}
+
+.intro p {
+    font-size: 14px;
+    color:  #1c7857;
+    font-family: "Nunito", sans-serif;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+}
+
+.card h3{
+    color: #064e3b;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.name p{
+    color:#064e3b;
+    font-family: "Nunito", sans-serif;
+}
+
+.name small{
+    color: #05967c;
+    font-family: "Nunito", sans-serif;
+}
+
+.green { background: rgb(216, 243, 220); }
+.yellow { background: rgb(255, 232, 161); }
+.red { background: rgb(255, 214, 214); }
+
+
+.hours {
+    background: #048e64;
+    color: white;
+}
+
+.hours h3 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: "Playfair Display", sans-serif;
+}
+
+.hours p{
+    margin-bottom: 10px;
+    font-family: "Nunito", sans-serif;
+}
+
+.form h3{
+    color: #064e3b;
+    font-family: "Playfair Display", sans-serif;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #064e3b;
+    font-family: "Nunito", sans-serif;
+}
+
+.form input,
+.form textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #a7f3d0;
+    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+}
+
+.form textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+
+.form button {
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #059669;
+    color: white;
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+}
+
+
+.form button:hover {
+    opacity: 0.9;
+}
+
+.navbar a:hover {
+    opacity: 0.7;
+}
+
+
+@media (max-width: 900px) {
+
+    nav li{
+        display: none;
+    }
+
+    nav li:first-child, nav li:last-child{
+        display: block;
+    }
+    
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar nav a {
+        margin: 0 10px;
+    }
+}
